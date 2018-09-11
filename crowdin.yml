@@ -1,7 +1,7 @@
 export_languages: ["en-GB"]
 files:
-  - source: /admin/language/en-GB/*/*.php
-    translation: /admin/language/%locale%/*/%original_file_name%
+  - source: /admin/language/en-GB/**/*.php
+    translation: /admin/language/%locale%/**/%original_file_name%
     translation_replace:
       en-GB.:
     update_option: update_as_unapproved
@@ -10,13 +10,18 @@ files:
     translation_replace:
       en-GB.:
     update_option: update_as_unapproved
-  - source: /catalog/language/en-GB/*/*.php
-    translation: /catalog/language/%locale%/*/%original_file_name%
+  - source: /catalog/language/en-GB/**/*.php
+    translation: /catalog/language/%locale%/**/%original_file_name%
     translation_replace:
       en-GB.:
     update_option: update_as_unapproved
   - source: /catalog/language/en-GB/*.php
     translation: /catalog/language/%locale%/%original_file_name%
+    translation_replace:
+      en-GB.:
+    update_option: update_as_unapproved
+  - source: /install/language/en-GB/*.php
+    translation: /install/language/%locale%/%original_file_name%
     translation_replace:
       en-GB.:
     update_option: update_as_unapproved
