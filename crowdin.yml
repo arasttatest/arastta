@@ -5,4 +5,18 @@ files:
     translation_replace:
       en-GB.:
     update_option: update_as_unapproved
-    
+  - source: /admin/language/en-GB/*.php
+    translation: /admin/language/%locale%/%original_file_name%
+    translation_replace:
+      en-GB.:
+    update_option: update_as_unapproved
+  - source: /catalog/language/en-GB/*/*.php
+    translation: /catalog/language/%locale%/*/%original_file_name%
+    translation_replace:
+      en-GB.:
+    update_option: update_as_unapproved
+  - source: /catalog/language/en-GB/*.php
+    translation: /catalog/language/%locale%/%original_file_name%
+    translation_replace:
+      en-GB.:
+    update_option: update_as_unapproved
