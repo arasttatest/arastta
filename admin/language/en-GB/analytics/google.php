@@ -8,7 +8,7 @@
  */
 
 // Heading
-$_['heading_title']                 = 'Google Analytics';
+$_['heading_title']                 = 'Google Analytics Test';
 
 // Text
 $_['text_success']                  = 'Success: You have modified Google Analytics!';
