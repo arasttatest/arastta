@@ -1,23 +1,17 @@
-
 export_languages: ["en-GB"]
 files:
   - source: /admin/language/en-GB/**/*.php
-    dest: /admin/**/%original_file_name%
     translation: /admin/language/%locale%/**/%original_file_name%
     update_option: update_as_unapproved
-  - source: /admin/language/en-GB/default.php
-    dest: /admin/default.php
-    translation: /admin/language/%locale%/default.php
+  - source: /admin/language/en-GB/*.php
+    translation: /admin/language/%locale%/%original_file_name%
     update_option: update_as_unapproved
   - source: /catalog/language/en-GB/**/*.php
-    dest: /catalog/**/%original_file_name%
     translation: /catalog/language/%locale%/**/%original_file_name%
     update_option: update_as_unapproved
-  - source: /catalog/language/en-GB/default.php
-    dest: /catalog/default.php
-    translation: /catalog/language/%locale%/default.php
+  - source: /catalog/language/en-GB/*.php
+    translation: /catalog/language/%locale%/%original_file_name%
     update_option: update_as_unapproved
-  - source: /install/language/en-GB/default.php
-    dest: /install/default.php
-    translation: /install/language/%locale%/default.php
+  - source: /install/language/en-GB/*.php
+    translation: /install/language/%locale%/%original_file_name%
     update_option: update_as_unapproved
